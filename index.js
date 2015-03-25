@@ -22,11 +22,9 @@ $( document ).ready(function(){
 
   });
 
-
-
   //function to scroll to page chosen section
   function scrolltoId(id, scrollSpeed){
-    var offset = 10;
+    var offset = 100;
     var targetOffset = $(id).offset().top - offset;
     $('html,body').animate({scrollTop:targetOffset}, scrollSpeed);
   };
