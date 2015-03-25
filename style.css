@@ -1,11 +1,23 @@
 header{
-  background:gray;
+  background:rgb(36, 36, 36);
   height: 180px;
 }
 
 .page-header{
   margin-bottom:25px;
+  color:white ;
 }
+
+.page-header a{
+  color: gray;
+
+}
+
+.page-header span{
+  color: gray;
+}
+
+
 
 .section-header{
   position: relative;
@@ -15,5 +27,13 @@ header{
 
 section{
   height:600px;
+  background: rgb(36, 36, 36);
+  color:white;
 }
 
+.white{
+  position:relative;
+  width:100%;
+  height:10px;
+  background:white;
+}
