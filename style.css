@@ -1,8 +1,18 @@
-section{
+header{
   background:gray;
   height: 180px;
 }
 
 .page-header{
   margin-bottom:25px;
+}
+
+.section-header{
+  position: relative;
+  top:50px;
+}
+
+
+section{
+  height:600px;
 }
