@@ -9,12 +9,17 @@ header{
 }
 
 .page-header a{
+
   color: gray;
+  margin-right:20px;
+  margin-left:10px;
+
 
 }
 
 .page-header span{
-  color: gray;
+  color: white;
+
 }
 
 

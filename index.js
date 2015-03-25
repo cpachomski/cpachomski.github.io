@@ -1,8 +1,3 @@
-// 1 get window height
-// 2 subtract header height from it
-// 3 set parallax background heights to be that difference
-// 4 set section heighs to be that difference
-
 
 $( document ).ready(function(){
 
@@ -13,5 +8,27 @@ $( document ).ready(function(){
 
 
   $('.parallax-container').css("height", newBcgHeight + "px" );
+
+  $('.scroll-link').on('click', function(event){
+    event.preventDefault();
+    var sectionId = $(this).attr("data-id");
+    scrolltoId("#" + sectionId, 750);
+    console.log('scroll?')
+  });
+
+  $('.scroll-top').on('click', function(event){
+    event.preventDefault;
+    $('html,body').animate({scrollTop:0}, 'slow')
+
+  });
+
+
+
+  //function to scroll to page chosen section
+  function scrolltoId(id, scrollSpeed){
+    var offset = 10;
+    var targetOffset = $(id).offset().top - offset;
+    $('html,body').animate({scrollTop:targetOffset}, scrollSpeed);
+  };
 
 })
