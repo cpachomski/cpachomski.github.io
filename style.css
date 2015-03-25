@@ -27,7 +27,7 @@ header{
 
 .section-header{
   position: relative;
-  top:50px;
+  top:30px;
 }
 
 
@@ -37,12 +37,12 @@ section{
   color:white;
 }
 
-#Contact{
-  height:200px;
+#About{
+  height:100%;
   background: rgb(36, 36, 36);
 }
 
-#Contact h1{
+#About h1{
   position:relative;
   margin-top:40px;
   color:white;
@@ -55,17 +55,20 @@ section{
   background:white;
 }
 
-#Contact ul{
+#About ul{
   position:relative;
   list-style-type:none;
   text-align: center;
-  margin-top:40px;
+  margin-top:80px;
+  margin-bottom:80px;
 
 }
 
-#Contact ul li {
+#About ul li {
   display:inline;
   margin: 0px 25px;
+  color:white;
+
 
 }
 
@@ -80,4 +83,22 @@ section{
   cursor: auto;
   color: black;
 }
+
+#about_content{
+  position:relative;
+  margin-top:100px;
+  margin-bottom:100px;
+  text-align:center;
+
+}
+
+#about_content div{
+  width:500px;
+  display:block;
+  color:white;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:50px;
+}
+
 
