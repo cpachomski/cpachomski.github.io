@@ -1,8 +1,44 @@
-section{
-  background:gray;
+header{
+  background:rgb(36, 36, 36);
   height: 180px;
 }
 
 .page-header{
   margin-bottom:25px;
+  color:white ;
+}
+
+.page-header a{
+
+  color: gray;
+  margin-right:20px;
+  margin-left:10px;
+
+
+}
+
+.page-header span{
+  color: white;
+
+}
+
+
+
+.section-header{
+  position: relative;
+  top:50px;
+}
+
+
+section{
+  height:600px;
+  background: rgb(36, 36, 36);
+  color:white;
+}
+
+.white{
+  position:relative;
+  width:100%;
+  height:10px;
+  background:white;
 }
