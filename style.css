@@ -37,6 +37,18 @@ section{
   color:white;
 }
 
+#Music{
+  height:900px;
+  background: rgb(36, 36, 36);
+  color:white;
+}
+
+#Web{
+  height:900px;
+  background: rgb(36, 36, 36);
+  color:white;
+}
+
 #About{
   height:100%;
   background: rgb(36, 36, 36);
@@ -101,4 +113,14 @@ section{
   margin-top:50px;
 }
 
+.media{
+  margin-top:75px;
+}
 
+.media-body a{
+  color:white;
+}
+
+iframe{
+  margin-top:100px;
+}
