@@ -38,7 +38,7 @@ section{
 }
 
 #Music{
-  height:900px;
+  height:600px;
   background: rgb(36, 36, 36);
   color:white;
 }
@@ -78,7 +78,7 @@ section{
 
 #About ul li {
   display:inline;
-  margin: 0px 25px;
+  margin: 0px 15px;
   color:white;
 
 
