@@ -108,6 +108,10 @@ section{
   color: black;
 }
 
+.modal-dialog{
+  width:60%;
+}
+
 #about_content{
   position:relative;
   margin-top:100px;
