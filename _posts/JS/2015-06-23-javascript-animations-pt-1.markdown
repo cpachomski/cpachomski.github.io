@@ -8,6 +8,8 @@ tags: []
 image:
   feature:
 date: 2015-06-23T15:38:27-04:00
+image:
+  feature: anemone.jpg
 ---
 
 JavaScript Animations pt.1
