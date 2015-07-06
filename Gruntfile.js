@@ -16,7 +16,7 @@ module.exports = function(grunt) {
             },
             files: {
               'index.min.js': [
-              "index.js", 'parallax.min.js']
+              "js/*"]
             }
           }
         },
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
               optimzationLevel: 7,
               progressive: true
             },
-            files[{
+            files: [{
               expand: true,
               cwd: 'images/',
               src: "*",
