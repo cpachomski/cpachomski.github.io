@@ -7,8 +7,6 @@ $( document ).ready(function(){
   var newBcgHeight = windowHeight - headerHeight;
 
 
-
-
   $('.parallax-container').css("height", newBcgHeight + "px" );
 
   $('.scroll-link').on('click', function(event){
