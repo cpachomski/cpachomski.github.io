@@ -1,0 +1,142 @@
+header{
+  background:rgb(36, 36, 36);
+  height: 180px;
+
+}
+
+.page-header{
+  margin-bottom:25px;
+  color:white ;
+}
+
+.page-header a{
+
+  color: gray;
+  margin-right:20px;
+  margin-left:10px;
+
+
+}
+
+.page-header span{
+  color: white;
+
+}
+
+
+
+.section-header{
+  position: relative;
+  top:30px;
+}
+
+
+section{
+  height:600px;
+  background: rgb(36, 36, 36);
+  color:white;
+}
+
+#Music{
+  height:600px;
+  background: rgb(36, 36, 36);
+  color:white;
+}
+
+#Web {
+  height:1000px;
+  background: rgb(36, 36, 36);
+  color:white;
+}
+
+#About{
+  height:100%;
+  background: rgb(36, 36, 36);
+}
+
+#About h1{
+  position:relative;
+  margin-top:40px;
+  color:white;
+}
+
+#About h2{
+  color:white;
+}
+
+#About h2 span{
+  color:white;
+
+}
+
+
+
+
+.white{
+  position:relative;
+  width:100%;
+  height:10px;
+  background:white;
+}
+
+#About ul{
+  position:relative;
+  list-style-type:none;
+  text-align: center;
+  margin-top:80px;
+  margin-bottom:80px;
+
+}
+
+#About ul li {
+  display:inline;
+  margin: 0px 15px;
+  color:white;
+
+
+}
+
+.modal-footer a{
+
+  margin:15px;
+  color: rgb(36, 36, 36);
+}
+.modal-footer a:hover{
+
+  margin:15px;
+  cursor: auto;
+  color: black;
+}
+
+.modal-dialog{
+  width:60%;
+}
+
+#about_content{
+  position:relative;
+  margin-top:100px;
+  margin-bottom:100px;
+  text-align:center;
+
+}
+
+#about_content div{
+  width:500px;
+  display:block;
+  color:white;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:50px;
+}
+
+.media{
+  margin-top:75px;
+}
+
+.media-body a{
+  color:white;
+}
+
+iframe{
+  margin-top:100px;
+}
