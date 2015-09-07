@@ -17,6 +17,7 @@ Things you may want to know:
 Inlcudes:
 
 
+* jQuery
 
 * Gulp (gulp-sass, gulp-concat, gulp-minify-css)
 
