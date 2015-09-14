@@ -1,3 +1,19 @@
+@font-face {
+  font-family: OstrichBold;
+  src: url("fonts/ostrich-sans-master/OstrichSans-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: OstrichLight;
+  src: url("fonts/ostrich-sans-master/OstrichSans-Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: OstrichRoundedMedium;
+  src: url("fonts/ostrich-sans-master/OstrichSansRounded-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: Bebas;
+  src: url("fonts/BebasNeue.otf") format("opentype"); }
+
 .section {
   width: 100%;
   text-align: center;
@@ -11,8 +27,9 @@
     -webkit-background-clip: text;
     font-size: 200px;
     font-weight: 200;
-    text-align: center;
-    font-family: "Mandali", sans-serif; }
+    text-align: left;
+    font-family: Bebas;
+    padding-left: 50px; }
   .section .play-swag {
     background-image: -webkit-linear-gradient(transparent, transparent), url("imgs/work.jpg");
     background-size: cover;
@@ -20,32 +37,127 @@
     -webkit-background-clip: text;
     font-size: 200px;
     font-weight: 800;
-    text-align: center;
-    font-family: "Mandali", sans-serif; }
+    text-align: right;
+    font-family: Bebas;
+    padding-right: 100px; }
   .section .content {
     min-height: 100px; }
 
 #play {
-  margin-top: 500px; }
+  margin-top: 500px;
+  padding-bottom: 25px; }
 
 .grid-container {
-  margin: 40px auto 120px;
+  margin: 50px auto 120px;
   max-width: 1000px;
   width: 90%;
-  background-color: red; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .grid-container svg {
+    top: -1px; }
+    .grid-container svg path {
+      fill: #555;
+      transition: fill 0.3s ease-in; }
   .grid-container a {
     float: left;
     max-width: 250px;
-    width: 33.33333%;
+    width: 23%;
     color: #333; }
+    .grid-container a:hover .title h2 {
+      color: #555; }
+    .grid-container a:hover .title h2, .grid-container a:hover .title p {
+      transform: translateY(-3px); }
+    .grid-container a:hover .title p {
+      opacity: 0; }
+    .grid-container a:hover figure img {
+      opacity: 1; }
+    .grid-container a:hover figure button {
+      opacity: 1;
+      transform: translateY(-50%) translateX(-50%) scale(1); }
+    .grid-container a:hover svg {
+      border-bottom: none;
+      border-right: none; }
+      .grid-container a:hover svg path {
+        fill: #555; }
   .grid-container figure {
     position: relative;
     overflow: hidden;
     margin: 5px;
-    background: #333; }
-    .grid-container figure img {
-      position: relative;
-      display: block;
-      width: 100%;
-      opacity: 0.7;
-      transition: opacity 0.3s; }
+    background: #FFF; }
+    .grid-container figure button {
+      top: 50%;
+      left: 50%;
+      background: transparent;
+      color: #555;
+      opacity: 0;
+      transform: translateY(-50%) translateX(-50%) scale(0.25); }
+    .grid-container figure button.construction {
+      background-color: yellow !important; }
+  .grid-container .title {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+    .grid-container .title h2 {
+      font-family: Bebas;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 300;
+      font-size: 200%;
+      transition: all 0.2s; }
+    .grid-container .title p {
+      font-family: OstrichLight;
+      padding: 0 0px;
+      margin-top: 0px;
+      color: #aaa;
+      font-size: 25px;
+      letter-spacing: 1px;
+      font-weight: 800;
+      transition: opacity 0.2s, transform 0.2s; }
+    .grid-container .title h2, .grid-container .title p, .grid-container .title button {
+      transform: translateY(30px);
+      backface-visibility: hidden; }
+    .grid-container .title button {
+      position: absolute;
+      padding: 4px 20px;
+      border: 2px solid #555;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      transition: opacity 0.2s, transform 0.2s; }
+
+@media screen and (max-width: 62em) {
+  .grid-container a {
+    width: 50%; } }
+
+@media screen and (max-width: 45em) {
+  .grid-container {
+    max-width: 500px; }
+    .grid-container a {
+      width: 50%; }
+    .grid-container .title h2 {
+      margin-bottom: 0px;
+      transform: translateY(20px); }
+    .grid-container .title p {
+      margin: 0;
+      padding: 0 10px; } }
+
+@media screen and (max-width: 27em) {
+  .grid-container {
+    max-width: 250px; }
+    .grid-container a {
+      width: 100%; } }
+
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
   <script src="js/snap.svg-min.js"></script>
 
 
@@ -21,6 +21,12 @@
 
 <body>
 
+<script>
+  var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+
+if (is_chrome != true) {alert("Be Kind. Use Chrome. Otherwise your browser won't render the stuff correctly")}
+
+</script>
   <div class='landing-header'>
     <canvas id='grapher-canvas'>
     </canvas>
@@ -32,43 +38,54 @@
   </div>
 
 
-  <div id="work" class='section'>
+  <div id="work" class='section clearfix'>
     <div class='work-swag'>
       Work
     </div>
 
       <section class='grid-container clearfix' id='grid-container'>
-          <a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+          <a href="http://www.ironpaper.com/" data-path-hover="m 10,34.57627 -180,0 L 0,0 10,0 z">
           <figure>
 
-            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-            <figcaption>
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0,320 0, 320 0,0 900,0 z"/></svg>
+            <div class='title'>
               <h2>Ironpaper</h2>
               <p>Web Developer</p>
-              <button>View</button>
-            </figcaption>
+              <button>Developed client sites on tight deadlines. PHP, Wordpress, HubSpot, JavaScript, Css3, Html5, Sass, Gulp, Grunt, D3.</button>
+            </div>
           </figure>
         </a>
-        <a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+        <a href="http://devbootcamp.com/" data-path-hover="m 10,34.57627 -180,0 L 0,0 10,0 z">
           <figure>
 
-            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-            <caption>
-              <h2>Ironpaper</h2>
-              <p>Web Developer</p>
-              <button>View</button>
-            </caption>
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0,320 0, 320 0,0 900,0 z"/></svg>
+            <div class='title'>
+              <h2>DevBootcamp</h2>
+              <p>Full-Stack Padawan</p>
+              <button>Learned JavaScript, Ruby, Rails, Sinatra, Meteor. Lead a team of amazing developers. Stretched my brain.</button>
+            </div>
           </figure>
         </a>
-        <a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+        <a href="http://www.sanofi.us/l/us/en/index.jsp" data-path-hover="m 10,34.57627 -180,0 L 0,0 10,0 z">
           <figure>
 
-            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-            <figcaption>
-              <h2>Ironpaper</h2>
-              <p>Web Developer</p>
-              <button>View</button>
-            </figcaption>
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0,320 0, 320 0,0 900,0 z"/></svg>
+            <div class='title'>
+              <h2>Sanofi</h2>
+              <p>IT Technician</p>
+              <button>Maintained windows enterprise installations for sales reps. Built internal website for displaying hardware solutions in dreamweaver. </button>
+            </div>
+          </figure>
+        </a>
+        <a href="http://modmedsys.com/" data-path-hover="m 10,34.57627 -180,0 L 0,0 10,0 z">
+          <figure>
+
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0,320 0, 320 0,0 900,0 z"/></svg>
+            <div class='title'>
+              <h2>Modern Medical </h2>
+              <p>Biomedical Technician</p>
+              <button>Changed the stickers on every piece of biomedical equipment in two separate hospitals.</button>
+            </div>
           </figure>
         </a>
       </section>
@@ -77,13 +94,91 @@
   </div>
 
 
-  <div id="play" class='section'>
+  <div id="play" class='section clearfix'>
     <div class='play-swag'>
       Play
     </div>
-      <div class='content'>
-    </div>
+
+    <section class='grid-container clearfix' id='grid-container'>
+          <a href="https://cephalopods.bandcamp.com/" data-path-hover="m 10,34.57627 -180,0 L 0,0 10,0 z">
+          <figure>
+
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0,320 0, 320 0,0 900,0 z"/></svg>
+            <div class='title'>
+              <h2>Cephalopods and Their Allies</h2>
+              <p>Guitar - Ally</p>
+              <button>Bandcamp</button>
+            </div>
+          </figure>
+        </a>
+        <a href="https://www.youtube.com/watch?v=YMDnEkVUQMY" data-path-hover="m 10,34.57627 -180,0 L 0,0 10,0 z">
+          <figure>
+
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0,320 0, 320 0,0 900,0 z"/></svg>
+            <div class='title'>
+              <h2>LudeJaw</h2>
+              <p>Guitar - Bass - Drums  </p>
+              <button>Song with picture</button>
+            </div>
+          </figure>
+        </a>
+        <a href="https://www.flickr.com/photos/pachomski/" data-path-hover="m 10,34.57627 -180,0 L 0,0 10,0 z">
+          <figure>
+
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0,320 0, 320 0,0 900,0 z"/></svg>
+            <div class='title'>
+              <h2>Photography</h2>
+              <p>Guy with camera</p>
+              <button>Flickr</button>
+            </div>
+          </figure>
+        </a>
+        <a href="" data-path-hover="m 10,34.57627 -180,0 L 0,0 10,0 z">
+          <figure>
+
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0,320 0, 0 0,0 900,0 z"/></svg>
+            <div class='title'>
+              <h2> JavaScript</h2>
+              <p>Fingers on keyboard</p>
+              <button class='construction'>Under Construction</button>
+            </div>
+          </figure>
+        </a>
+      </section>
+
   </div>
+
+
+
+
+  <script>
+      (function() {
+
+        function init() {
+          var speed = 300,
+            easing = mina.backout;
+
+          [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+            var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+              pathConfig = {
+                from : path.attr( 'd' ),
+                to : el.getAttribute( 'data-path-hover' )
+              };
+
+            el.addEventListener( 'mouseenter', function() {
+              path.animate( { 'path' : pathConfig.to }, speed, easing );
+            } );
+
+            el.addEventListener( 'mouseleave', function() {
+              path.animate( { 'path' : pathConfig.from }, speed, easing );
+            } );
+          } );
+        }
+
+        init();
+
+      })();
+    </script>
 
 
 

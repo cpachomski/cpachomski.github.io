@@ -1,8 +1,49 @@
-requirejs.config({
-  "baseUrl":"js/lib",
-  "paths": {
-    "app": "../app",
-    "jquery": "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"
-  }
+$(document).ready(function(){
+
+
+
+
+  (function() {
+
+
+    function init() {
+      var speed = 250,
+        easing = mina.easeinout;
+
+      [].slice.call ( document.querySelectorAll( '#grid-container > a' ) ).forEach( function( el ) {
+        var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+          pathConfig = {
+            from : path.attr( 'd' ),
+            to : el.getAttribute( 'data-path-hover' )
+          };
+
+        el.addEventListener( 'mouseenter', function() {
+          path.animate( { 'path' : pathConfig.to }, speed, easing );
+        } );
+
+        el.addEventListener( 'mouseleave', function() {
+          path.animate( { 'path' : pathConfig.from }, speed, easing );
+        } );
+      } );
+    }
+
+    init();
+
+  })();
+
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
