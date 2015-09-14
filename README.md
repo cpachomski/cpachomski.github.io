@@ -1,4 +1,4 @@
-== cpachomski.github.io
+# cpachomski.github.io
 
   My personal website!
 
