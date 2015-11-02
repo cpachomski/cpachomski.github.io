@@ -17,13 +17,7 @@ Things you may want to know:
 Inlcudes:
 
 
-* jQueryw
-
 * Gulp (gulp-sass, gulp-concat, gulp-minify-css)
-
-* Require.js
-
-* Sass
 
 * font-awesome for Icons
 
