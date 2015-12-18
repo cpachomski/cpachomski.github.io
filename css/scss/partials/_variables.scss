@@ -6,22 +6,24 @@ $ewert: 'Ewert', cursive;
 $hanalei: 'Hanalei', cursive;
 
 
+$black: #444;
+
 @font-face{
   font-family: Bebas;
-  src: url('fonts/BebasNeue.otf') format("opentype");
+  src: url('../../../fonts/BebasNeue.otf') format("opentype");
 }
 
 @font-face {
   font-family: LeagueGothic;
-  src: url("fonts/LeagueGothic-Regular.otf") format("opentype");
+  src: url("../../../fonts/LeagueGothic-Regular.otf") format("opentype");
 }
 
 @font-face{
   font-family: OstrichBold;
-  src: url('fonts/ostrich-sans-master/OstrichSans-Bold.otf') format("opentype");
+  src: url('../../../fonts/ostrich-sans-master/OstrichSans-Bold.otf') format("opentype");
 }
 @font-face{
   font-family: OstrichLight;
-  src: url('fonts/ostrich-sans-master/OstrichSans-Light.otf') format("opentype");
+  src: url('../../../fonts/ostrich-sans-master/OstrichSans-Light.otf') format("opentype");
 }
 
