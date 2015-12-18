@@ -26,7 +26,7 @@ var autoRunner = setInterval(function(){
      clearInterval(autoRunner);
     }
 
-  }, 100);
+  }, 1000);
 
 
 setInterval(setCanvasSize(), 20);
@@ -93,7 +93,7 @@ function addPoint(event){
 
     if (coordinatesArray.length > 1) {
       var newCoordinate = coordinatesArray[coordinatesArray.length-1];
-      sectionColor = 'white';
+      sectionColor = randomColor();
       for (var i = 0; i < coordinatesArray.length ; i++) {
         var currentCoordinate = coordinatesArray[i];
 
