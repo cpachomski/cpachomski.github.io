@@ -21,7 +21,7 @@
   height: 350px;
   margin-bottom: 150px; }
   .section .work-swag {
-    background-image: -webkit-linear-gradient(transparent, transparent), url("imgs/work.jpg");
+    background-image: -webkit-linear-gradient(transparent, transparent), url("cpachomski.github.io/imgs/play.jpg");
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
