@@ -58,26 +58,28 @@
     .grid-container svg path {
       fill: #555;
       transition: fill 0.3s ease-in; }
-  .grid-container a {
+  .grid-container > div, .grid-container > a {
     float: left;
     max-width: 250px;
+    min-height: 500px;
+    display: inline !important;
     width: 23%;
     color: #333; }
-    .grid-container a:hover .title h2 {
+    .grid-container > div:hover .title h2, .grid-container > a:hover .title h2 {
       color: #555; }
-    .grid-container a:hover .title h2, .grid-container a:hover .title p {
+    .grid-container > div:hover .title h2, .grid-container > div:hover .title p, .grid-container > a:hover .title h2, .grid-container > a:hover .title p {
       transform: translateY(-3px); }
-    .grid-container a:hover .title p {
+    .grid-container > div:hover .title p, .grid-container > a:hover .title p {
       opacity: 0; }
-    .grid-container a:hover figure img {
+    .grid-container > div:hover figure img, .grid-container > a:hover figure img {
       opacity: 1; }
-    .grid-container a:hover figure button {
+    .grid-container > div:hover figure button, .grid-container > a:hover figure button {
       opacity: 1;
       transform: translateY(-50%) translateX(-50%) scale(1); }
-    .grid-container a:hover svg {
+    .grid-container > div:hover svg, .grid-container > a:hover svg {
       border-bottom: none;
       border-right: none; }
-      .grid-container a:hover svg path {
+      .grid-container > div:hover svg path, .grid-container > a:hover svg path {
         fill: #555; }
   .grid-container figure {
     position: relative;
@@ -85,19 +87,52 @@
     margin: 5px;
     background: #FFF; }
     .grid-container figure button {
+      position: relative;
       top: 50%;
       left: 50%;
+      min-width: 200px;
       background: transparent;
       color: #555;
       opacity: 0;
       transform: translateY(-50%) translateX(-50%) scale(0.25); }
+      .grid-container figure button > span {
+        display: block;
+        text-decoration: underline;
+        margin-top: 25px; }
+      .grid-container figure button ul li {
+        margin: 5px 0px; }
+        .grid-container figure button ul li > a {
+          position: relative;
+          display: block;
+          width: 100%;
+          text-align: right;
+          font-size: 10px;
+          color: #333; }
+          .grid-container figure button ul li > a:before {
+            content: '>';
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            color: #333;
+            transition: all 0.1s ease-out;
+            -webkit-transition: all 0.1s ease-out;
+            -moz-transition: all 0.1s ease-out;
+            -ms-transition: all 0.1s ease-out;
+            -o-transition: all 0.1s ease-out; }
+          .grid-container figure button ul li > a:hover:before {
+            left: 10px; }
     .grid-container figure button.construction {
       background-color: yellow !important; }
   .grid-container .title {
     position: absolute;
     top: 0;
     z-index: 0;
-    padding: 10px;
+    padding: 0px;
     width: 100%;
     height: 100%;
     text-align: center; }
@@ -125,7 +160,7 @@
       backface-visibility: hidden; }
     .grid-container .title button {
       position: absolute;
-      padding: 4px 20px;
+      padding: 4px 10px;
       border: 2px solid #555;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -139,7 +174,7 @@
 @media screen and (max-width: 45em) {
   .grid-container {
     max-width: 500px; }
-    .grid-container a {
+    .grid-container > div {
       width: 50%; }
     .grid-container .title h2 {
       margin-bottom: 0px;
@@ -151,7 +186,7 @@
 @media screen and (max-width: 27em) {
   .grid-container {
     max-width: 250px; }
-    .grid-container a {
+    .grid-container > div {
       width: 100%; } }
 
 .clearfix:after {

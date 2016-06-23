@@ -1,7 +1,7 @@
 #links {
   position: aboslute;
   top: 50%;
-  tranform: translateY(-50%); }
+  transform: translateY(-50%); }
   #links a {
     color: #ddd; }
     #links a:hover {
