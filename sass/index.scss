@@ -233,16 +233,11 @@
     }
 }
 
-@media screen and (max-width: 62em){
-  .grid-container a {
-    width: 50%;
-  }
-}
 
-@media screen and (max-width: 45em){
+@media screen and (max-width: 768px){
   .grid-container{
     max-width: 500px;
-    > div{
+    > div, > a{
       width: 50%;
     }
     .title{
@@ -258,15 +253,13 @@
   }
 }
 
-@media screen and (max-width: 27em){
+@media screen and (max-width: 480px){
   .grid-container{
     max-width: 250px;
-    > div {
+    > div, > a {
       width: 100%;
     }
   }
-
-
 }
 
 

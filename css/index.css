@@ -167,14 +167,10 @@
       font-weight: bold;
       transition: opacity 0.2s, transform 0.2s; }
 
-@media screen and (max-width: 62em) {
-  .grid-container a {
-    width: 50%; } }
-
-@media screen and (max-width: 45em) {
+@media screen and (max-width: 768px) {
   .grid-container {
     max-width: 500px; }
-    .grid-container > div {
+    .grid-container > div, .grid-container > a {
       width: 50%; }
     .grid-container .title h2 {
       margin-bottom: 0px;
@@ -183,10 +179,10 @@
       margin: 0;
       padding: 0 10px; } }
 
-@media screen and (max-width: 27em) {
+@media screen and (max-width: 480px) {
   .grid-container {
     max-width: 250px; }
-    .grid-container > div {
+    .grid-container > div, .grid-container > a {
       width: 100%; } }
 
 .clearfix:after {
