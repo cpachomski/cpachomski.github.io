@@ -17,17 +17,18 @@ $( document ).ready(function(){
   var sectionColor;
   var timesRun = 0;
 
+setTimeout(function(){
+  var autoRunner = setInterval(function(){
+      autoGenerator();
+      timesRun+=1;
 
-var autoRunner = setInterval(function(){
-    autoGenerator();
-    timesRun+=1;
+      if (timesRun == 65){
+       clearInterval(autoRunner);
+      }
 
-    if (timesRun == 65){
-     clearInterval(autoRunner);
-    }
+    }, 500);
 
-  }, 100);
-
+}, 500)
 
 setInterval(setCanvasSize(), 20);
 
