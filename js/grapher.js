@@ -26,7 +26,7 @@ setTimeout(function(){
        clearInterval(autoRunner);
       }
 
-    }, 500);
+    }, 100);
 
 }, 500)
 
