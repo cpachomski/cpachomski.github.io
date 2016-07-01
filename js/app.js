@@ -1,11 +1,4 @@
 $(document).ready(function(){
-
-
-
-
-  (function() {
-
-
     function init() {
       var speed = 250,
         easing = mina.easeinout;
@@ -26,13 +19,7 @@ $(document).ready(function(){
         } );
       } );
     }
-
     init();
-
-  })();
-
-
-
 });
 
 
