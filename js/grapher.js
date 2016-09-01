@@ -124,7 +124,7 @@ function autoGenerator(){
       for (var i = 0; i < coordinatesArray.length ; i++) {
         var currentCoordinate = coordinatesArray[i];
         /* varie hue */
-        sectionColor = '#444';
+        sectionColor = '#ca0002';
         drawLine(currentCoordinate, newCoordinate);
       }
     }

@@ -17,29 +17,25 @@
 .section {
   width: 100%;
   text-align: center;
-  background-color: #444;
+  background-color: #ca0002;
   height: 350px;
   margin-bottom: 150px; }
   .section .work-swag {
-    background-image: -webkit-linear-gradient(transparent, transparent), url("cpachomski.github.io/imgs/play.jpg");
-    background-size: cover;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: white;
     font-size: 200px;
     font-weight: 200;
     text-align: left;
     font-family: Bebas;
-    padding-left: 50px; }
+    padding-left: 50px;
+    letter-spacing: 10px; }
   .section .play-swag {
-    background-image: -webkit-linear-gradient(transparent, transparent), url("imgs/work.jpg");
-    background-size: cover;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: white;
     font-size: 200px;
     font-weight: 800;
     text-align: right;
     font-family: Bebas;
-    padding-right: 100px; }
+    padding-right: 100px;
+    letter-spacing: 10px; }
   .section .content {
     min-height: 100px; }
 
@@ -56,7 +52,7 @@
   .grid-container svg {
     top: -1px; }
     .grid-container svg path {
-      fill: #555;
+      fill: #ca0002;
       transition: fill 0.3s ease-in; }
   .grid-container > div, .grid-container > a {
     float: left;
@@ -64,9 +60,9 @@
     min-height: 500px;
     display: inline !important;
     width: 23%;
-    color: #333; }
+    color: #ca0002; }
     .grid-container > div:hover .title h2, .grid-container > a:hover .title h2 {
-      color: #555; }
+      color: #ca0002; }
     .grid-container > div:hover .title h2, .grid-container > div:hover .title p, .grid-container > a:hover .title h2, .grid-container > a:hover .title p {
       transform: translateY(-3px); }
     .grid-container > div:hover .title p, .grid-container > a:hover .title p {
@@ -80,7 +76,7 @@
       border-bottom: none;
       border-right: none; }
       .grid-container > div:hover svg path, .grid-container > a:hover svg path {
-        fill: #555; }
+        fill: #ca0002; }
   .grid-container figure {
     position: relative;
     overflow: hidden;
@@ -92,7 +88,7 @@
       left: 50%;
       min-width: 200px;
       background: transparent;
-      color: #555;
+      color: #ca0002;
       opacity: 0;
       transform: translateY(-50%) translateX(-50%) scale(0.25); }
       .grid-container figure button > span {
@@ -107,7 +103,7 @@
           width: 100%;
           text-align: right;
           font-size: 10px;
-          color: #333; }
+          color: #ca0002; }
           .grid-container figure button ul li > a:before {
             content: '>';
             position: absolute;
@@ -118,7 +114,7 @@
             -moz-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             -o-transform: translateY(-50%);
-            color: #333;
+            color: #ca0002;
             transition: all 0.1s ease-out;
             -webkit-transition: all 0.1s ease-out;
             -moz-transition: all 0.1s ease-out;
@@ -150,7 +146,7 @@
       font-family: OstrichLight;
       padding: 0 0px;
       margin-top: 0px;
-      color: #aaa;
+      color: white;
       font-size: 25px;
       letter-spacing: 1px;
       font-weight: 800;
@@ -161,7 +157,7 @@
     .grid-container .title button {
       position: absolute;
       padding: 4px 10px;
-      border: 2px solid #555;
+      border: 2px solid #ca0002;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: bold;
