@@ -9,7 +9,7 @@ gulp.task("sass", function() {
     .pipe(sass().on("error", sass.logError))
     .pipe(minifyCSS())
     .pipe(concat("style.min.css"))
-    .pipe(gulp.dest("./css"));
+    .pipe(gulp.dest("./"));
 });
 
 gulp.task("sass:watch", function() {

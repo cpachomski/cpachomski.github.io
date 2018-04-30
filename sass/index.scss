@@ -1,31 +1,26 @@
-
-@font-face{
+@font-face {
   font-family: OstrichBold;
-  src: url('fonts/ostrich-sans-master/OstrichSans-Bold.otf') format("opentype");
+  src: url("fonts/ostrich-sans-master/OstrichSans-Bold.otf") format("opentype");
 }
 
-@font-face{
+@font-face {
   font-family: OstrichLight;
-  src: url('fonts/ostrich-sans-master/OstrichSans-Light.otf') format("opentype");
+  src: url("fonts/ostrich-sans-master/OstrichSans-Light.otf") format("opentype");
 }
 
-
-@font-face{
+@font-face {
   font-family: OstrichRoundedMedium;
-  src: url('fonts/ostrich-sans-master/OstrichSansRounded-Medium.otf') format("opentype");
+  src: url("fonts/ostrich-sans-master/OstrichSansRounded-Medium.otf") format("opentype");
 }
 
-
-@font-face{
+@font-face {
   font-family: Bebas;
-  src: url('fonts/BebasNeue.otf') format("opentype");
+  src: url("fonts/BebasNeue.otf") format("opentype");
 }
 
-
-
-.section{
+.section {
   width: 100%;
-  text-align:center;
+  text-align: center;
   background-color: #ca0002;
   height: 350px;
   margin-bottom: 150px;
@@ -39,6 +34,7 @@
     padding-left: 50px;
     letter-spacing: 10px;
   }
+
   .play-swag {
     color: white;
     font-size: 200px;
@@ -47,200 +43,192 @@
     font-family: Bebas;
     padding-right: 100px;
     letter-spacing: 10px;
-
   }
-  .content{
+  .content {
     min-height: 100px;
   }
 }
 
-
-#play{
+#play {
   margin-top: 500px;
   padding-bottom: 25px;
 }
 
-
-.grid-container{
+.grid-container {
   margin: 50px auto 120px;
   max-width: 1000px;
   width: 90%;
   padding-top: 50px;
   padding-bottom: 50px;
 
-    svg{
-      top: -1px;
-      path{
-        fill: #ca0002;
-        transition: fill 0.3s ease-in;
-      }
+  svg {
+    top: -1px;
+    path {
+      fill: #ca0002;
+      transition: fill 0.3s ease-in;
     }
+  }
 
+  > div,
+  > a {
+    float: left;
+    max-width: 250px;
+    min-height: 500px;
+    display: inline !important;
+    width: 23%;
+    color: #ca0002;
 
-    > div, > a{
-      float: left;
-      max-width: 250px;
-      min-height: 500px;
-      display: inline !important;
-      width: 23%;
-      color: #ca0002;
-
-      &:hover{
-        .title{
-          h2{
-            color: #ca0002;
-
-          }
-          h2, p{
-            transform: translateY(-3px);
-          }
-          p{
-            opacity: 0;
-
-          }
+    &:hover {
+      .title {
+        h2 {
+          color: #ca0002;
         }
-        figure img{
-            opacity: 1;
+        h2,
+        p {
+          transform: translateY(-3px);
         }
-        figure button{
-          opacity: 1;
-          transform: translateY(-50%) translateX(-50%) scale(1);
+        p {
+          opacity: 0;
         }
+      }
+      figure img {
+        opacity: 1;
+      }
+      figure button {
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+      }
 
-        svg{
-          border-bottom: none;
-          border-right: none;
-          path{
-            fill: #ca0002;
-          }
-
+      svg {
+        border-bottom: none;
+        border-right: none;
+        path {
+          fill: #ca0002;
         }
       }
     }
-    figure{
+  }
+  figure {
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    background: #fff;
+
+    button {
       position: relative;
-      overflow:hidden;
-      margin: 5px;
-      background: #FFF;
+      top: 50%;
+      left: 0;
+      min-width: 200px;
+      background: transparent;
+      color: #ca0002;
+      opacity: 0;
+      transform: translateY(-50%) scale(0.25);
+      > span {
+        display: block;
+        text-decoration: underline;
+        margin-top: 25px;
+      }
 
-      button{
-        position: relative;
-        top: 50%;
-        left: 50%;
-        min-width: 200px;
-        background:transparent;
-        color:#ca0002;
-        opacity: 0;
-        transform: translateY(-50%) translateX(-50%) scale(0.25);
-        > span {
+      ul li {
+        margin: 5px 0px;
+        > a {
+          position: relative;
           display: block;
-          text-decoration: underline;
-          margin-top: 25px;
-        }
-
-        ul li {
-          margin: 5px 0px;
-          > a {
-            position: relative;
-            display: block;
-            width: 100%;
-            text-align: right;
-            font-size: 10px;
+          width: 100%;
+          text-align: right;
+          font-size: 10px;
+          color: #ca0002;
+          &:before {
+            content: ">";
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
             color: #ca0002;
+            transition: all 0.1s ease-out;
+            -webkit-transition: all 0.1s ease-out;
+            -moz-transition: all 0.1s ease-out;
+            -ms-transition: all 0.1s ease-out;
+            -o-transition: all 0.1s ease-out;
+          }
+          &:hover {
             &:before {
-              content: '>';
-              position: absolute;
-              left: 5px;
-              top: 50%;
-              transform: translateY(-50%);
-              -webkit-transform: translateY(-50%);
-              -moz-transform: translateY(-50%);
-              -ms-transform: translateY(-50%);
-              -o-transform: translateY(-50%);
-              color: #ca0002;
-              transition: all 0.1s ease-out;
-              -webkit-transition: all 0.1s ease-out;
-              -moz-transition: all 0.1s ease-out;
-              -ms-transition: all 0.1s ease-out;
-              -o-transition: all 0.1s ease-out;
-            }
-            &:hover {
-              &:before{
-                left: 10px;
-              }
+              left: 10px;
             }
           }
         }
       }
-       button.construction{
-          background-color:yellow !important;
-        }
     }
-    .title{
+    button.construction {
+      background-color: yellow !important;
+    }
+  }
+  .title {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    h2 {
+      font-family: Bebas;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 300;
+      font-size: 200%;
+      transition: all 0.2s;
+    }
+    p {
+      font-family: OstrichLight;
+
+      padding: 0 0px;
+      margin-top: 0px;
+      color: white;
+      font-size: 25px;
+      letter-spacing: 1px;
+      font-weight: 800;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    h2,
+    p,
+    button {
+      transform: translateY(30px);
+      backface-visibility: hidden;
+    }
+    button {
       position: absolute;
-      top: 0;
-      z-index: 0;
-      padding: 0px;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-        h2{
-          font-family: Bebas;
-          margin-top: 0;
-          margin-bottom: 0;
-          color: white;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          font-weight: 300;
-          font-size: 200%;
-          transition: all 0.2s;
+      padding: 4px 10px;
+      border: 2px solid #ca0002;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
 
-        }
-        p{
-          font-family: OstrichLight;
-
-          padding: 0 0px;
-          margin-top: 0px;
-          color: white;
-          font-size: 25px;
-          letter-spacing: 1px;
-          font-weight: 800;
-          transition: opacity 0.2s, transform 0.2s;
-
-        }
-        h2, p, button{
-          transform: translateY(30px);
-          backface-visibility: hidden;
-        }
-        button{
-
-          position: absolute;
-          padding: 4px 10px;
-          border: 2px solid #ca0002;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          font-weight: bold;
-
-          transition: opacity 0.2s, transform 0.2s;
-        }
-
-
+      transition: opacity 0.2s, transform 0.2s;
     }
+  }
 }
 
-
-@media screen and (max-width: 992px){
-  .grid-container{
+@media screen and (max-width: 992px) {
+  .grid-container {
     max-width: 500px;
-    > div, > a{
+    > div,
+    > a {
       width: 50%;
     }
-    .title{
-      h2{
+    .title {
+      h2 {
         margin-bottom: 0px;
         transform: translateY(20px);
       }
-      p{
+      p {
         margin: 0;
         padding: 0 10px;
       }
@@ -248,21 +236,20 @@
   }
 }
 
-@media screen and (max-width: 480px){
-  .grid-container{
+@media screen and (max-width: 480px) {
+  .grid-container {
     max-width: 250px;
-    > div, > a {
+    > div,
+    > a {
       width: 100%;
     }
   }
 }
 
-
-
 .clearfix:after {
-   content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
