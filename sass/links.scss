@@ -1,0 +1,13 @@
+#links {
+  position: aboslute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  a {
+    color: #ddd;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
