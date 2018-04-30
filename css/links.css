@@ -1,8 +1,0 @@
-#links {
-  position: aboslute;
-  top: 50%;
-  transform: translateY(-50%); }
-  #links a {
-    color: #ddd; }
-    #links a:hover {
-      color: #fff; }
