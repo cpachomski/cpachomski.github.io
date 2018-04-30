@@ -1,0 +1,26 @@
+{
+  "name": "cpachomski.github.io",
+  "version": "1.0.0",
+  "description": "I'm Chris. I work at CNN Money in NYC. This is my website.",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "start": "node_modules/gulp/bin/gulp.js sass:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpachomski/cpachomski.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cpachomski/cpachomski.github.io/issues"
+  },
+  "homepage": "https://github.com/cpachomski/cpachomski.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.1",
+    "node-sass": "^4.9.0"
+  }
+}
