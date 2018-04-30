@@ -21,7 +21,7 @@
 .section {
   width: 100%;
   text-align: center;
-  background-color: #ca0002;
+  background-color: #333;
   height: 350px;
   margin-bottom: 150px;
 
@@ -64,7 +64,7 @@
   svg {
     top: -1px;
     path {
-      fill: #ca0002;
+      fill: #333;
       transition: fill 0.3s ease-in;
     }
   }
@@ -76,12 +76,12 @@
     min-height: 500px;
     display: inline !important;
     width: 23%;
-    color: #ca0002;
+    color: #333;
 
     &:hover {
       .title {
         h2 {
-          color: #ca0002;
+          color: #333;
         }
         h2,
         p {
@@ -103,7 +103,7 @@
         border-bottom: none;
         border-right: none;
         path {
-          fill: #ca0002;
+          fill: #333;
         }
       }
     }
@@ -120,7 +120,7 @@
       left: 0;
       min-width: 200px;
       background: transparent;
-      color: #ca0002;
+      color: #333;
       opacity: 0;
       transform: translateY(-50%) scale(0.25);
       > span {
@@ -137,7 +137,7 @@
           width: 100%;
           text-align: right;
           font-size: 10px;
-          color: #ca0002;
+          color: #333;
           &:before {
             content: ">";
             position: absolute;
@@ -148,7 +148,7 @@
             -moz-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             -o-transform: translateY(-50%);
-            color: #ca0002;
+            color: #333;
             transition: all 0.1s ease-out;
             -webkit-transition: all 0.1s ease-out;
             -moz-transition: all 0.1s ease-out;
@@ -206,7 +206,7 @@
     button {
       position: absolute;
       padding: 4px 10px;
-      border: 2px solid #ca0002;
+      border: 2px solid #333;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: bold;
