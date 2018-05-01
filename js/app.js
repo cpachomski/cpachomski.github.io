@@ -6,7 +6,7 @@ $(document).ready(function(){
       [].slice.call ( document.querySelectorAll( '#grid-container > div, #grid-container > a' ) ).forEach( function( el ) {
         var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
           pathConfig = {
-            from : path.attr( 'd' ),
+            from : path.attr( 'd' ), // i don't care
             to : el.getAttribute( 'data-path-hover' )
           };
 
@@ -21,16 +21,3 @@ $(document).ready(function(){
     }
     init();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-

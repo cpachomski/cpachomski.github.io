@@ -1,21 +1,22 @@
 @font-face {
   font-family: OstrichBold;
-  src: url("fonts/ostrich-sans-master/OstrichSans-Bold.otf") format("opentype");
+  src: url('fonts/ostrich-sans-master/OstrichSans-Bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: OstrichLight;
-  src: url("fonts/ostrich-sans-master/OstrichSans-Light.otf") format("opentype");
+  src: url('fonts/ostrich-sans-master/OstrichSans-Light.otf') format('opentype');
 }
 
 @font-face {
   font-family: OstrichRoundedMedium;
-  src: url("fonts/ostrich-sans-master/OstrichSansRounded-Medium.otf") format("opentype");
+  src: url('fonts/ostrich-sans-master/OstrichSansRounded-Medium.otf')
+    format('opentype');
 }
 
 @font-face {
   font-family: Bebas;
-  src: url("fonts/BebasNeue.otf") format("opentype");
+  src: url('fonts/BebasNeue.otf') format('opentype');
 }
 
 .section {
@@ -139,7 +140,7 @@
           font-size: 10px;
           color: #333;
           &:before {
-            content: ">";
+            content: '>';
             position: absolute;
             left: 5px;
             top: 50%;
@@ -247,7 +248,7 @@
 }
 
 .clearfix:after {
-  content: " "; /* Older browser do not support empty content */
+  content: ' '; /* Older browser do not support empty content */
   visibility: hidden;
   display: block;
   height: 0;
