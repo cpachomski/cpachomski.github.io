@@ -4,7 +4,8 @@
   "description": "I'm Chris. I work at CNN Money in NYC. This is my website.",
   "main": "Gulpfile.js",
   "scripts": {
-    "start": "node_modules/gulp/bin/gulp.js sass:watch"
+    "start": "node_modules/gulp/bin/gulp.js sass && open ./index.html",
+    "start:dev": "open ./index.html && node_modules/gulp/bin/gulp.js sass:watch"
   },
   "repository": {
     "type": "git",
